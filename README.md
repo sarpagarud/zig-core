@@ -2,6 +2,19 @@
 > [!NOTE]
 > Originated from https://github.com/sarpagarud/unemployed-zig
 > 
+
+## Installation
+
+```zig
+zig fetch --save https://github.com/sarpagarud/zig-core
+```
+```zig
+    const zig_core = b.dependency("zig_core", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    exe.root_module.addImport("zig-core", zig_core.module("zig_core"));
+```
 ## Commands
 ```zig
 zig init

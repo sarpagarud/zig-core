@@ -2,6 +2,7 @@ const std = @import("std");
 const Io = std.Io;
 
 const zig_core = @import("zig_core");
+const core_zig = @import("core.zig");
 
 pub fn main(init: std.process.Init) !void {
     // Prints to stderr, unbuffered, ignoring potential errors.
