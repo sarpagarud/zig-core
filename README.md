@@ -1,5 +1,7 @@
 # zig-core
-
+> [!NOTE]
+> Originated from https://github.com/sarpagarud/unemployed-zig
+> 
 ## Commands
 ```zig
 zig init
