@@ -2,6 +2,8 @@
 const std = @import("std");
 const Io = std.Io;
 
+const core_zig = @import("core.zig");
+
 /// This is a documentation comment to explain the `printAnotherMessage` function below.
 ///
 /// Accepting an `Io.Writer` instance is a handy way to write reusable code.
