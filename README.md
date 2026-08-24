@@ -6,14 +6,14 @@
 ## Installation
 
 ```zig
-zig fetch --save https://github.com/sarpagarud/zig-core
+zig fetch --save git+https://github.com/sarpagarud/zig-core
 ```
 ```zig
-    const zig_core = b.dependency("zig_core", .{
-        .target = target,
-        .optimize = optimize,
-    });
-    exe.root_module.addImport("zig-core", zig_core.module("zig_core"));
+const zig_core = b.dependency("zig_core", .{
+    .target = target,
+    .optimize = optimize,
+});
+exe.root_module.addImport("zig-core", zig_core.module("zig_core"));
 ```
 ## Commands
 ```zig
@@ -26,7 +26,7 @@ zig init --minimal
 zig build
 ```
 ```zig
-zig fetch --save https://github.com/sarpagarud/zig-core
+zig fetch --save git+https://github.com/sarpagarud/zig-core
 ```
 ```zig
 zig fetch --save=zig-core git+https://github.com/sarpagarud/zig-core
