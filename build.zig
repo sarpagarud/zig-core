@@ -87,7 +87,9 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
-    exe.root_module.addImport("core.zig", core_zig.module("core_zig"));
+
+    mod.addImport("core_zig", core_zig.module("core_zig"));
+    exe.root_module.addImport("core_zig", core_zig.module("core_zig"));
 
     // This declares intent for the executable to be installed into the
     // install prefix when running `zig build` (i.e. when executing the default
