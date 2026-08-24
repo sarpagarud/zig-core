@@ -21,7 +21,7 @@ pub fn add(a: i32, b: i32) i32 {
 
 pub fn hello() !void {
     std.debug.print("hello: {any}", .{core_zig});
-    try core_zig.hello();
+    try core_zig.csv.hello();
 }
 
 test "basic add functionality" {
