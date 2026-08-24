@@ -13,6 +13,7 @@ const zig_core = b.dependency("zig_core", .{
     .target = target,
     .optimize = optimize,
 });
+mod.addImport("zig-core", zig_core.module("zig_core"));
 exe.root_module.addImport("zig-core", zig_core.module("zig_core"));
 ```
 ## Commands
