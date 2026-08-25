@@ -5,7 +5,7 @@ const core_zig = @import("core_zig");
 
 const Io = std.Io;
 
-
+pub const csv = core_zig.csv;
 
 
 /// This is a documentation comment to explain the `printAnotherMessage` function below.

@@ -33,8 +33,8 @@
     // internet connectivity.
     .dependencies = .{
         .core_zig = .{
-            .url = "git+https://github.com/sarpagarud/core.zig#0fc0fb6dc233c242f74bbf2bb38f7c79a7cd650b",
-            .hash = "core_zig-0.0.0-HPmcudw9AADmT7s2SPfrNAGcUZqMg__DKkRC1TdMyv7r",
+            .url = "git+https://github.com/sarpagarud/core.zig#0c13ef7fcb93581e8a65eef1053f0ee408956f9d",
+            .hash = "core_zig-0.0.0-HPmcuZU_AAB4r1r0QLLLVJEnO7hdzjcmOisJykeGsfas",
         },
     },
     .paths = .{
